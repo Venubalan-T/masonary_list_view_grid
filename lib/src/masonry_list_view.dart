@@ -10,7 +10,10 @@ class MasonryGrid extends StatefulWidget {
     this.mainAxisGap = 8.0,
     this.crossAxisGap = 8.0,
     this.padding = const EdgeInsets.all(0),
-    this.scrollToTopIcon = const Icon(Icons.keyboard_arrow_up),
+    this.scrollToTopIcon = const Icon(
+      Icons.keyboard_arrow_up,
+      color: Colors.white,
+    ),
     this.scrollToTopBgColor = const Color(0xff0F4AA3),
     super.key,
   });
