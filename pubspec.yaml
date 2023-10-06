@@ -1,10 +1,10 @@
 name: masonry_list_view_grid
 description: A new Flutter package that provides a masonry grid layout using list view.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/Venubalan-T/masonary_list_view_grid.git
 
 environment:
-  sdk: '>=3.1.3 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:

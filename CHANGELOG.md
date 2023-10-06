@@ -14,3 +14,7 @@ Bug fix:
 
 Bug fix:
 - Tried removing package errors
+## 0.0.4
+
+Bug fix:
+- flutter version downgraded to support pub.dev pana
