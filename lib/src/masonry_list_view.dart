@@ -29,12 +29,12 @@ class MasonryListViewGrid extends StatefulWidget {
 
   /// Gap between the child items in Vertical axis.
   final double crossAxisGap;
-  
+
   /// The amount of space by which to inset the children.
   final EdgeInsets padding;
 
   /// Specify the ScrollToTop floating button Icon.
-  /// 
+  ///
   /// __Note:__ _Currently no option is provided to hide the button._
   final Icon scrollToTopIcon;
 
