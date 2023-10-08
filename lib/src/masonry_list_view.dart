@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:linked_scroll_controller/linked_scroll_controller.dart';
 
-class MasonryGrid extends StatefulWidget {
-  const MasonryGrid({
+class MasonryListViewGrid extends StatefulWidget {
+  const MasonryListViewGrid({
     required this.column,
     required this.children,
     this.mainAxisGap = 8.0,
@@ -18,19 +18,34 @@ class MasonryGrid extends StatefulWidget {
     super.key,
   });
 
+  /// Create the fixed number of column.
   final int column;
+
+  /// Creates a widget that insets its children in Masonry List View Grid.
   final List<Widget> children;
+
+  /// Gap between the child items in Horizontal axis.
   final double mainAxisGap;
+
+  /// Gap between the child items in Vertical axis.
   final double crossAxisGap;
+  
+  /// The amount of space by which to inset the children.
   final EdgeInsets padding;
+
+  /// Specify the ScrollToTop floating button Icon.
+  /// 
+  /// __Note:__ _Currently no option is provided to hide the button._
   final Icon scrollToTopIcon;
+
+  /// Specify the ScrollToTop floating button background color.
   final Color scrollToTopBgColor;
 
   @override
-  State<MasonryGrid> createState() => _MasonryGridState();
+  State<MasonryListViewGrid> createState() => _MasonryListViewGridState();
 }
 
-class _MasonryGridState extends State<MasonryGrid> {
+class _MasonryListViewGridState extends State<MasonryListViewGrid> {
   late LinkedScrollControllerGroup _controllers;
   late List<ScrollController> _scrollControllers;
 
