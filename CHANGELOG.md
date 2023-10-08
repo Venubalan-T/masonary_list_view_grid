@@ -25,3 +25,7 @@ Stable release:
 - Widget name changed from "MasonryGrid" to "MasonryListViewGrid".
 - Documentation update.
 - Example Provided.
+
+## 1.0.1
+
+Code Fomatted
