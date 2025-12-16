@@ -186,14 +186,14 @@ class _MasonryListViewGridState extends State<MasonryListViewGrid> {
                   physics: const BouncingScrollPhysics(),
                   cacheExtent: 50,
                   controller: _scrollControllers[rowChildIndex],
-                  itemCount: (widget.children.length % widget.column <
-                              rowChildIndex
+                  itemCount: (rowChildIndex <
+                              widget.children.length % widget.column
                           ? (widget.children.length / widget.column).ceil()
                           : (widget.children.length / widget.column).floor()) +
                       1,
                   itemBuilder: (BuildContext context, int columnChildIndex) {
-                    int maxLength = (widget.children.length % widget.column <
-                                rowChildIndex
+                    int maxLength = (rowChildIndex <
+                                widget.children.length % widget.column
                             ? (widget.children.length / widget.column).ceil()
                             : (widget.children.length / widget.column)
                                 .floor()) +
